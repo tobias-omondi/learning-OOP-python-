@@ -34,3 +34,17 @@ class SavingAccount (BankAccount): # inherit from bankaccount to save in a savin
         self.balance += interest
         print(f"Interest applied: ${interest}. New balance: ${self.balance}")
 
+person1 = BankAccount(100, "Tobias Omondi", 20000)
+print (person1.account_holder)
+print (person1.account_number)
+print (person1.balance)
+person2 = BankAccount(110 , "Mike Mutuwa" , 300000000.00)
+print(person2.account_number)
+print(person2.account_holder)
+print(person2.balance)
+
+person3 = SavingAccount(111, 'Peter Kilwa', 300000, 5.0)
+print(person3.account_number)
+print(person3.account_holder)
+print(person3.balance)
+print(person3.interest_rate)
